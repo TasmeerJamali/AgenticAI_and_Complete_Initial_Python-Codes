@@ -1,0 +1,23 @@
+[project]
+name = "langgraphinto"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "TasmeerJamali", email = "163600279+TasmeerJamali@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-google-genai>=2.0.9",
+    "langgraph>=0.2.72",
+    "python-dotenv>=1.0.1",
+]
+
+[project.scripts]
+lg = "langgraphinto:main"
+simplefloww ="langgraphinto.simpleflow:run_chain"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
